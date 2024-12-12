@@ -1,0 +1,88 @@
+/* src/components/NavBar.css */
+/*.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: white;
+  }
+  
+  .logo h2 {
+    margin: 0;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 2rem;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+  
+  .nav-links a:hover {
+    color: #f0a500;
+  }*/
+  .actives{
+    color: red !important;
+  }
+  /* Wrapper for the search bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  padding: 0 10px;
+  background-color: #fff; /* Add background for contrast */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  overflow: hidden;
+}
+
+/* Input field */
+.search-input {
+  flex: 1; /* Takes up remaining space */
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 50px 0 0 50px; /* Round left corners */
+  color: #333;
+  background-color: transparent; /* Matches container */
+}
+
+/* Search button/icon */
+.search-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f3f3; /* Neutral color */
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for button */
+.search-button:hover {
+  background-color: red;
+  color: white;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .search-bar {
+    max-width: 100%; /* Full width on smaller screens */
+  }
+  .search-input {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
