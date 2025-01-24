@@ -3,25 +3,25 @@ import Home from './Features/Home';
 import About from './Features/About';
 import Product from './Features/Product';
 import Contect from './Features/Contect';
+import Studentindex from './Features/Studentindex'
 import Login from './Component/Login';
 import Signup from './Component/Signup';
 import Editstudent from './assets/Editstudent'
 import NavBar from './NavBar';
-import Selider from './Selider';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import StudentCreate from './Features/StudentCreate';
 function App() {
   return (
     <BrowserRouter>
       <header>
-      <NavBar/> 
+      <NavBar/>
       </header>
       <Routes>
-        <Route path="/" element={<Selider />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
         <Route path="/Product" element={<Product />} />
         <Route path="/Contect" element={<Contect />} />
+        <Route path="/Studentindex" element={<Studentindex />} />
         <Route path="/studentCreate" element={<StudentCreate />} />
         <Route path="/editstudent/:id" element={<Editstudent />} />
         <Route path="/Login" element={<Login />} />

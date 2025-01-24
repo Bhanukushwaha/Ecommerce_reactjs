@@ -43,11 +43,11 @@ const NavBar = () => {
             className="me-auto my-2 my-lg-0"
             style={{ maxHeight: '100px' }}
             navbarScroll>
-            <Link to="/" className={`nav-link ${isActive('/') ? 'actives' : ''}`}>logo </Link>
-            <Link to="/home" className={`nav-link ${isActive('/Home') ? 'actives' : ''}`}>Home </Link>
+            <Link to="/" className={`nav-link ${isActive('/') ? 'actives' : ''}`}>Home </Link>
             <Link to="/About" className='nav-link'>About </Link>
             <Link to="/Product" className='nav-link'>Product </Link>
             <Link to="/Contect" className='nav-link'>Contect </Link>
+            <Link to="/Studentindex" className='nav-link'>Students</Link>
 
             <NavDropdown title="Link" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Action</NavDropdown.Item>

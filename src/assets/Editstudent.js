@@ -25,7 +25,6 @@ function Editstudent() {
     roll_number: '',
     district: '',
     branch: '',
-    image: null, // File object
     active: false,
   });
 
@@ -48,7 +47,7 @@ function Editstudent() {
         },
       });
       if (response.status === "200") {
-        navigate('/home');
+        navigate('/Studentindex');
       }
     } catch (error) {
       console.error('Error during student data submission:', error.message);
@@ -142,7 +141,7 @@ function Editstudent() {
         />
       </Form.Group>
       <Button variant="primary" type="submit">Submit</Button>
-      <Button variant="secondary" onClick={() => navigate("/home")} className="ms-2">
+      <Button variant="secondary" onClick={() => navigate("/Studentindex")} className="ms-2">
         Back to home
       </Button>
     </Form>

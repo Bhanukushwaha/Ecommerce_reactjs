@@ -53,7 +53,7 @@ function StudentCreate() {
 
       const result = await response.json();
       if (result.data.success) {
-        navigate('/home'); // Redirect to '/students' page on success
+        navigate('/Studentindex'); // Redirect to '/students' page on success
       } else {
         console.error('Error:', result.message || 'Something went wrong');
       }
@@ -134,7 +134,7 @@ function StudentCreate() {
       </Form.Group>
       <div>
         <Button onClick={authenticate} size="sm">Submit Form</Button>{' '}
-        <Button onClick={() => navigate('/home')} size="sm">Back to Home</Button>
+        <Button onClick={() => navigate('/Studentindex')} size="sm">Back to Home</Button>
       </div>
     </Form>
   );
