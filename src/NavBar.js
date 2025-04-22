@@ -45,6 +45,7 @@ const NavBar = () => {
             navbarScroll>
             <Link to="/" className={`nav-link ${isActive('/') ? 'actives' : ''}`}>Home </Link>
             <Link to="/About" className='nav-link'>About </Link>
+            <Link to="/Shop" className='nav-link'>shop </Link>
             <Link to="/Product" className='nav-link'>Product </Link>
             <Link to="/Contect" className='nav-link'>Contect </Link>
             <Link to="/Studentindex" className='nav-link'>Students</Link>

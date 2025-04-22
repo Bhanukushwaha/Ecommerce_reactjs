@@ -1,8 +1,9 @@
 import React from 'react'
 import Home from './Features/Home';
-import About from './Features/About';
+import Aboute from './Features/Aboute';
 import Product from './Features/Product';
 import Contect from './Features/Contect';
+import Shop from './Features/Shop';
 import Studentindex from './Features/Studentindex'
 import Login from './Component/Login';
 import Signup from './Component/Signup';
@@ -18,9 +19,10 @@ function App() {
       </header>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/About" element={<About />} />
+        <Route path="/About" element={<Aboute />} />
         <Route path="/Product" element={<Product />} />
         <Route path="/Contect" element={<Contect />} />
+        <Route path="/Shop" element={<Shop />} />
         <Route path="/Studentindex" element={<Studentindex />} />
         <Route path="/studentCreate" element={<StudentCreate />} />
         <Route path="/editstudent/:id" element={<Editstudent />} />

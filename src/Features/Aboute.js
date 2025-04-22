@@ -25,6 +25,13 @@ function Aboute() {
     setNum(num-1)
     }
   };
+
+
+  const input = [11,22,33,44,88]
+  let a = input.entries();
+  for (let x of a){
+    console.log(x)
+  }
   return (
     <div>
       <h1>how to add will paginat record</h1>
