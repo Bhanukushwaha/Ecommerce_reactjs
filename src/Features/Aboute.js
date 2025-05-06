@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-
 function Aboute() {
   const curTime = new Date().toLocaleTimeString();
   const [time, setTime] = useState(curTime);
